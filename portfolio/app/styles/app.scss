@@ -74,21 +74,19 @@ body{
       .home h1{
           font-size: 14px;
       }
-
-      .project{
-        .tech-used,.features{
-          font-size: 8px;
-        }
-      }
   }
 
   .about
   {
     font-size: 13px;
+
+    .about-text{
+      font-size: 12px;
+    }
   }
 
   .project{
-    font-size: 13px;
+    font-size: 10px;
   }
 }
 

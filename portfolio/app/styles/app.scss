@@ -72,7 +72,7 @@ body{
       max-height: 300vh;
 
       .home h1{
-          font-size: 14px;
+          font-size: 17px;
       }
   }
 
@@ -139,7 +139,7 @@ body{
       .content
       {
           width: 35%;
-          align-items: flex-end;
+          align-items: center;
           height: 100%;
           display: flex;
           flex-direction: column;
@@ -150,7 +150,7 @@ body{
 
       .typewriter
       {
-        width: 100%;
+        // width: 100%;
          h1 {
           color: #fff;
           font-family: monospace;
@@ -158,7 +158,7 @@ body{
           border-right: .15em solid white; 
           white-space: nowrap; 
           margin: auto; 
-          padding-right: 25px;
+          // padding-right: 25px;
           animation: 
             typing 15s steps(30,start) infinite;
         }

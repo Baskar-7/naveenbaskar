@@ -596,6 +596,9 @@ body{
         background-color: rgba(0, 0, 0, 0.744);
         border-radius: 5px;
       }
+      @media only screen and (max-width: 400px) {
+        .prev, .next,.caption {font-size: 8px}
+      }
     }
 
    

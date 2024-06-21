@@ -1,60 +1,26 @@
 {{page-title "ProjectScreenshots"}}
-
 <div class="screen_shots">
+   
 
-    <div class="Home_page_container" style="margin-bottom: 80px;">
-        <h1>Home Page ScreenShots</h1>
-        <div class="slideshow-container">
-            
-            {{#each this.model.home as |image index|}}
-                <div class="mySlides home_page_slides fade">
-                    <img src={{image.url}} style="width:100%">
-                    {{#if image.description}}
-                        <div style="display: flex;justify-content:center;">
-                            <div class="caption">{{image.description}}</div>
-                        </div>
-                    {{/if}}
-                </div>
-            {{/each}}
-
-            <div class="prev" {{on "click" (fn this.plusDivs -1 "home_page")}}>❮</div>
-            <div class="next" {{on "click" (fn this.plusDivs 1 "home_page")}}>❯</div>
+   <div class="single-screenshot-container">
+        <div class="scrnshot-container">
+            <h1 class="title">Project Structure</h1>
+            <img src="/naveen/image2.png">
+            <p class="caption ">This image depicts the overall organization of the testing project files and folders. It can help someone understand how the test scripts, data, configuration files, and other project elements are arranged. By looking at the folder structure, we can potentially identify the types of tests being conducted (e.g., unit tests, integration tests, API tests) and how the test suite is organized.</p>
         </div>
-
-        <div style="text-align:center;margin-top:10px;">
-            {{#each this.model.home as |image index|}}
-                <span class="dot home_page_dots" {{on "click" (fn this.currentDiv index "home_page")}}></span> 
-            {{/each}}
+         <div class="scrnshot-container">
+             <h1 class="title">Report</h1>
+            <img src="/naveen/image1.png">
+            <p class="caption ">This is a comprehensive report detailing the test results for specific criteria. It provides an in-depth analysis of the performance, accuracy, and reliability of the tested items, ensuring that all necessary aspects have been thoroughly evaluated. Whether you're looking for insights into the strengths and weaknesses or simply an overview of the outcomes, this report covers it all. For a closer look, please refer to the image below.</p>
         </div>
-    </div>
-
-    <div class="profile_page_container">
-        <h1>Profile Page ScreenShots</h1>
-        <div class="slideshow-container">
-            {{#each this.model.profile as |image index|}}
-                <div class="mySlides profile_page_slides fade">
-                    <img src={{image.url}} style="width:100%">
-                    {{#if image.description}}
-                        <div style="display: flex;justify-content:center;">
-                            <div class="caption">{{image.description}}</div>
-                        </div>
-                    {{/if}}
-                </div>
-            {{/each}}
-
-            <div class="prev" {{on "click" (fn this.plusDivs -1 "profile_page")}}>❮</div>
-            <div class="next" {{on "click" (fn this.plusDivs 1 "profile_page")}}>❯</div>
+         <div class="scrnshot-container">
+             <h1 class="title">Overall Report</h1>
+            <img src="/naveen/image3.png">
+            <p class="caption ">This image presents the total testing reports, offering a thorough overview of the application's performance. It encapsulates all the key findings, metrics, and results from the extensive testing process. Whether it's functionality, usability, or security, this report provides a holistic view of how the application fares across different parameters. Dive into the detailed analysis and understand the overall health and efficiency of the application through this comprehensive report.</p>
         </div>
-
-        <div style="text-align:center;margin-top:10px;">
-            {{#each this.model.profile as |image index|}}
-                <span class="dot profile_page_dots" {{on "click" (fn this.currentDiv index "profile_page")}}></span> 
-            {{/each}}
-        </div>
-    </div>
+   </div>
 
 </div>
-{{this.showDivs 1 "home_page"}}
-{{this.showDivs 1 "profile_page"}}
+
 
 {{outlet}}

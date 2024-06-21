@@ -573,6 +573,34 @@ body{
 .screen_shots{
   padding: 30px;
 
+  .single-screenshot-container{
+    width: 80%;
+    margin: auto;
+
+    .scrnshot-container{
+      margin: 10px;
+      padding: 15px;
+      img{
+        border: 1px solid black;
+        width: 100%;
+      }
+
+      .caption {
+        color: #fff;
+        font-size: 15px;
+        padding: 8px 12px;
+        // position: absolute;
+        // bottom: 8px;
+        // width: 100%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.744);
+        border-radius: 5px;
+      }
+    }
+
+   
+  }
+
   h1{
       color: rgb(70, 69, 69);
       text-decoration: underline;

@@ -94,7 +94,7 @@ export default class IndexController extends Controller {
 
   @action
   viewScreenShots() {
-    const url = 'https://baskarelumalai.vercel.app/project-screenshots';
+    const url = 'https://naveenbaskar.vercel.app/project-details';
     window.open(
       url,
       '_blank',
